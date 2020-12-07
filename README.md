@@ -5,9 +5,11 @@ Take these designs and make them into a simple website!
 ## Get Started
 
 - each folder has an `index.html` and a `main.css`
-- each should have some starter divs and the css should be linked. Check to make sure!
+- each should have some starter code and the css should be linked. Check to make sure!
+- Add elements and classes/ids, as needed
 - Feel free to add colors and borders to help you visualize your page
 - Remember - divs with no content, by default, have a height and width of 0. Use your dev tools and set min-height/min-width, as needed
+- Your learning will come from trying. Don't worry about having a perfect approach or solution.
 
 
 ### Media Query 1
