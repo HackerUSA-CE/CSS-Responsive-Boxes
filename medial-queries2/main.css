@@ -34,11 +34,14 @@ aside  {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  min-height: 20vh;
+
 }
 
 aside > div {
   flex-grow: 10;
   margin: .5em;
+  /* min-width: 20vh; */
 }
 
 main {

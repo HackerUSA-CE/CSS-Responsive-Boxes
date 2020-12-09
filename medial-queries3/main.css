@@ -2,7 +2,6 @@ body {
   background: peachpuff;
 }
 
-
 * {
   border: 1px solid teal;
   box-sizing: border-box;
@@ -15,80 +14,53 @@ body {
   flex-wrap: wrap;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex-grow: 3;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 85vh;
-}
-
-header, footer, aside, .wrapper  {
-  flex-grow: 1;
-  margin: .5em;
-  max-height: 10vh;
-}
-
 header {
   width: 100%;
+  height: 10em;
+  margin-bottom: 1em;
 }
 
-aside  {
+.wrapper {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  min-height: 82vh;
   justify-content: space-between;
-  flex: 1;
-  width: 90%;
+  flex-grow: 1;
 }
 
 aside > div {
-  margin: .5em;
-  min-width: 20%;
-  flex-basis: 22%;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction:column;
-
-  width: 90%;
+  width: 22%;
+  background: gray;
+  margin: 2vw;
 }
 
 main {
-  flex-grow: 3;
-  margin: .5em;
-  flex-basis: 4;
-  width: 50%;
+  flex-grow: 4;
 }
 
 
 @media (min-width: 600px) {
-  .container {
-    background: darkseagreen;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   .wrapper {
-    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: stretch;
-  }
-  header {
-    width: 100%;
-    max-height: 10vh;
   }
   aside {
     width: 80%;
     flex: 4;
-    height: 70vh;
+    align-items: center;
+    margin-right: 1em;
+  }
+  aside > div {
+    height: 10em;
   }
 
   main {
-    align-self: stretch;
-    flex: 1;
-    width: 90%;
+    flex: 2;
   }
 }
